@@ -53,7 +53,7 @@ struct SpiritFieldBackground: View {
             Spirit(
                 x: CGFloat.random(in: 0.05...0.95, using: &generator),
                 baseY: CGFloat.random(in: 0.1...1.0, using: &generator),
-                size: CGFloat.random(in: 14...30, using: &generator),
+                size: CGFloat.random(in: 21...45, using: &generator),
                 speed: Double.random(in: 0.015...0.04, using: &generator),
                 glyph: glyphs[index % glyphs.count],
                 phase: Double.random(in: 0...(2 * .pi), using: &generator)

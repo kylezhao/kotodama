@@ -239,6 +239,9 @@
     "Other" : {
 
     },
+    "Play" : {
+
+    },
     "Polishing and translation" : {
 
     },
@@ -308,6 +311,9 @@
 
     },
     "Start listening" : {
+
+    },
+    "Stop" : {
 
     },
     "Stop listening" : {

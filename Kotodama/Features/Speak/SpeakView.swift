@@ -196,9 +196,6 @@ struct SpeakView: View {
                     .font(KotodamaTheme.heading(.headline))
                     .foregroundStyle(KotodamaTheme.titleGradient)
                 Spacer()
-                if !viewModel.isBusy, !viewModel.finalizedText.isEmpty {
-                    SpeakButton(text: viewModel.finalizedText, id: "spoken", voiceLanguage: viewModel.language.voiceLanguage)
-                }
                 if viewModel.isListening {
                     HStack(spacing: 5) {
                         Circle().fill(KotodamaTheme.vermilion).frame(width: 7, height: 7)
@@ -212,13 +209,18 @@ struct SpeakView: View {
                     .foregroundStyle(.secondary)
                     .frame(maxWidth: .infinity, minHeight: 80, alignment: .leading)
             } else {
-                (Text(viewModel.finalizedText) + Text(viewModel.volatileText.isEmpty ? "" : (viewModel.finalizedText.isEmpty ? "" : " ") + viewModel.volatileText).foregroundColor(.secondary))
-                    .font(KotodamaTheme.transcript())
-                    .lineSpacing(4)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .textSelection(.enabled)
-                    .accessibilityIdentifier("transcriptText")
-                    .animation(.easeOut(duration: 0.15), value: viewModel.liveText)
+                HStack(alignment: .top, spacing: 10) {
+                    (Text(viewModel.finalizedText) + Text(viewModel.volatileText.isEmpty ? "" : (viewModel.finalizedText.isEmpty ? "" : " ") + viewModel.volatileText).foregroundColor(.secondary))
+                        .font(KotodamaTheme.transcript())
+                        .lineSpacing(4)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .textSelection(.enabled)
+                        .accessibilityIdentifier("transcriptText")
+                        .animation(.easeOut(duration: 0.15), value: viewModel.liveText)
+                    if !viewModel.isBusy, !viewModel.finalizedText.isEmpty {
+                        SpeakButton(text: viewModel.finalizedText, id: "spoken", voiceLanguage: viewModel.language.voiceLanguage)
+                    }
+                }
             }
             if case .preparing(let progress) = viewModel.phase {
                 ProgressView(value: progress).tint(KotodamaTheme.spirit)
@@ -238,19 +240,21 @@ struct SpeakView: View {
                     .foregroundStyle(KotodamaTheme.titleGradient)
                 Spacer()
                 Badge(text: refined.engine.displayName, systemImage: "wand.and.stars", tint: KotodamaTheme.blossom)
-                if !viewModel.isBusy {
-                    SpeakButton(text: refined.text, id: "refined", voiceLanguage: viewModel.language.voiceLanguage, tint: KotodamaTheme.blossom)
-                }
             }
             Text(refined.title)
                 .font(.subheadline.weight(.semibold))
                 .foregroundStyle(KotodamaTheme.paper)
-            Text(refined.text)
-                .font(KotodamaTheme.transcript())
-                .lineSpacing(4)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .textSelection(.enabled)
-                .accessibilityIdentifier("polishedText")
+            HStack(alignment: .top, spacing: 10) {
+                Text(refined.text)
+                    .font(KotodamaTheme.transcript())
+                    .lineSpacing(4)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .textSelection(.enabled)
+                    .accessibilityIdentifier("polishedText")
+                if !viewModel.isBusy {
+                    SpeakButton(text: refined.text, id: "refined", voiceLanguage: viewModel.language.voiceLanguage, tint: KotodamaTheme.blossom)
+                }
+            }
             HStack(spacing: 8) {
                 Badge(text: settings.style.title, systemImage: settings.style.symbol)
                 Badge(text: settings.scenario.title, systemImage: settings.scenario.symbol)
@@ -284,15 +288,18 @@ struct SpeakView: View {
                             .font(.subheadline.weight(.semibold))
                         Spacer()
                         Badge(text: translation.engine.displayName, systemImage: "arrow.left.arrow.right", tint: KotodamaTheme.spirit)
+                    }
+                    HStack(alignment: .top, spacing: 10) {
+                        Text(translation.text)
+                            .font(KotodamaTheme.transcript(18))
+                            .lineSpacing(3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .textSelection(.enabled)
                         if !viewModel.isBusy {
                             SpeakButton(text: translation.text, id: "translation-\(translation.target.id)", voiceLanguage: translation.target.voiceLanguage)
                         }
                     }
-                    Text(translation.text)
-                        .font(KotodamaTheme.transcript(18))
-                        .lineSpacing(3)
-                        .textSelection(.enabled)
-                        .padding(.bottom, 2)
+                    .padding(.bottom, 2)
                 }
                 .accessibilityIdentifier("translation-\(translation.target.id)")
             }

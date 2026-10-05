@@ -102,11 +102,11 @@ struct TranscriptDetailView: View {
             SpiritFieldBackground()
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
-                    section("Spoken words", systemImage: "waveform", speak: (transcript.rawText, "history-spoken", transcript.language.voiceLanguage)) {
-                        Text(transcript.rawText).font(KotodamaTheme.transcript(18)).textSelection(.enabled)
+                    section("Spoken words", systemImage: "waveform") {
+                        spokenRow(transcript.rawText, id: "history-spoken", voiceLanguage: transcript.language.voiceLanguage)
                     }
-                    section("Refined", systemImage: "sparkles", speak: (transcript.polishedText, "history-refined", transcript.language.voiceLanguage)) {
-                        Text(transcript.polishedText).font(KotodamaTheme.transcript(18)).textSelection(.enabled)
+                    section("Refined", systemImage: "sparkles") {
+                        spokenRow(transcript.polishedText, id: "history-refined", voiceLanguage: transcript.language.voiceLanguage, tint: KotodamaTheme.blossom)
                         if let summary = transcript.summary, !summary.isEmpty {
                             Text(summary).font(.footnote).foregroundStyle(.secondary)
                         }
@@ -127,11 +127,8 @@ struct TranscriptDetailView: View {
                                             .font(.subheadline.weight(.semibold))
                                         Spacer()
                                         Badge(text: translation.translatorName, systemImage: "arrow.left.arrow.right", tint: KotodamaTheme.spirit)
-                                        if let target = translation.target {
-                                            SpeakButton(text: translation.text, id: "history-\(translation.id)", voiceLanguage: target.voiceLanguage)
-                                        }
                                     }
-                                    Text(translation.text).font(KotodamaTheme.transcript(17)).textSelection(.enabled)
+                                    spokenRow(translation.text, id: "history-\(translation.id)", voiceLanguage: translation.target?.voiceLanguage ?? translation.targetLanguageID, size: 17)
                                 }
                                 .padding(.bottom, 4)
                             }
@@ -165,22 +162,26 @@ struct TranscriptDetailView: View {
         }
     }
 
+    /// A sentence with its read-aloud button alongside.
+    private func spokenRow(_ text: String, id: String, voiceLanguage: String, tint: Color = KotodamaTheme.spirit, size: CGFloat = 18) -> some View {
+        HStack(alignment: .top, spacing: 10) {
+            Text(text)
+                .font(KotodamaTheme.transcript(size))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .textSelection(.enabled)
+            SpeakButton(text: text, id: id, voiceLanguage: voiceLanguage, tint: tint)
+        }
+    }
+
     private func section<Content: View>(
         _ title: LocalizedStringKey,
         systemImage: String,
-        speak: (text: String, id: String, voiceLanguage: String)? = nil,
         @ViewBuilder content: () -> Content
     ) -> some View {
         VStack(alignment: .leading, spacing: 14) {
-            HStack {
-                Label(title, systemImage: systemImage)
-                    .font(KotodamaTheme.heading(.headline))
-                    .foregroundStyle(KotodamaTheme.titleGradient)
-                Spacer()
-                if let speak {
-                    SpeakButton(text: speak.text, id: speak.id, voiceLanguage: speak.voiceLanguage)
-                }
-            }
+            Label(title, systemImage: systemImage)
+                .font(KotodamaTheme.heading(.headline))
+                .foregroundStyle(KotodamaTheme.titleGradient)
             content()
         }
         .padding(.horizontal, 16)
