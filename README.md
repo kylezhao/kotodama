@@ -25,6 +25,8 @@ naming and file headers set up. Feature work has not started yet.
 
 - Swift 5, SwiftUI, SwiftData, Swift Testing
 - iOS 26.5+, Xcode 26.6
+- Localized in English, Simplified Chinese (简体中文) and Japanese (日本語):
+  UI strings in `Localizable.xcstrings`, app display name in `InfoPlist.xcstrings`
 - Planned: Speech framework (on-device recognition), Translation framework,
   Foundation Models for on-device polishing, a cloud model for the online mode
 
