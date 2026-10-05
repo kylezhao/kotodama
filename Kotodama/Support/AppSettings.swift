@@ -41,6 +41,7 @@ final class AppSettings {
         static let cloudModel = "cloudModel"
         static let showMetrics = "showMetrics"
         static let autoTranslate = "autoTranslate"
+        static let voiceIdentifiers = "voiceIdentifiers"
         static let apiKeyAccount = "anthropic-api-key"
     }
 
@@ -56,6 +57,8 @@ final class AppSettings {
     var cloudModel: CloudModel { didSet { defaults.set(cloudModel.rawValue, forKey: Keys.cloudModel) } }
     var showMetrics: Bool { didSet { defaults.set(showMetrics, forKey: Keys.showMetrics) } }
     var autoTranslate: Bool { didSet { defaults.set(autoTranslate, forKey: Keys.autoTranslate) } }
+    /// Chosen synthesizer voice per BCP 47 tag. Missing entries use the best installed voice.
+    var voiceIdentifiers: [String: String] { didSet { defaults.set(voiceIdentifiers, forKey: Keys.voiceIdentifiers) } }
     var apiKey: String { didSet { keychain.set(apiKey, for: Keys.apiKeyAccount) } }
 
     var hasAPIKey: Bool { !apiKey.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
@@ -74,6 +77,7 @@ final class AppSettings {
         cloudModel = defaults.string(forKey: Keys.cloudModel).flatMap(CloudModel.init(rawValue:)) ?? .default
         showMetrics = defaults.object(forKey: Keys.showMetrics) as? Bool ?? true
         autoTranslate = defaults.object(forKey: Keys.autoTranslate) as? Bool ?? true
+        voiceIdentifiers = defaults.dictionary(forKey: Keys.voiceIdentifiers) as? [String: String] ?? [:]
         apiKey = keychain.string(for: Keys.apiKeyAccount) ?? ""
     }
 

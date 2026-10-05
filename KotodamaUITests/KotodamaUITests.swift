@@ -79,6 +79,15 @@ final class KotodamaUITests: XCTestCase {
         sleep(1)
         snapshot(app, "11-history-detail-playing")
         app.buttons["speak-history-refined"].tap()
+
+        app.tabBars.buttons["Settings"].tap()
+        XCTAssertTrue(app.navigationBars["Settings"].waitForExistence(timeout: 5))
+        app.swipeUp()
+        app.swipeUp()
+        let openSettings = app.buttons["Open Settings to download voices"]
+        XCTAssertTrue(openSettings.waitForExistence(timeout: 5), "Voice section should be reachable")
+        sleep(1)
+        snapshot(app, "12-settings-voices")
     }
 
     /// Runs a bundled sample and waits for either a transcript or an error. Returns true on transcript.

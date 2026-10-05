@@ -31,9 +31,11 @@ Built for the Metanomaly iOS programming assignment (AI Speech-to-Text App).
   on-device and cloud paths.
 - **Model metrics** per recording: recognizer and model id, audio length, recognition time,
   first-result latency, real-time factor, and refiner and translator latency.
-- **Read it back**: a play button on the spoken text, the refined text and every translation
-  speaks the sentence with the system voice for that language (`AVSpeechSynthesizer`, best
-  available quality, Cantonese and Shanghainese mapped to the closest voice).
+- **Read it back**: a play button beside the spoken text, the refined text and every translation
+  speaks the sentence with the system voice for that language (`AVSpeechSynthesizer`). The best
+  installed quality is used by default; Settings lists the voices per language with a preview,
+  flags languages that only have the compact Default voice, and points to the iOS download page
+  for Enhanced and Premium voices. Chinese, Japanese and Korean play slightly slower.
 - **History** with Markdown export for test cases, and bundled sample audio in English, Mandarin
   and Japanese so the pipeline can be exercised without a microphone.
 - **Liquid glass UI** on iOS 26 with a night-shrine theme: drifting word spirits in a traditional

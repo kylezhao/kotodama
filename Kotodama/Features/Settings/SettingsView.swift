@@ -6,12 +6,14 @@
 //  Copyright © 2026 Kyle Zhao. All rights reserved.
 //
 
+import AVFoundation
 import FoundationModels
 import SwiftUI
 import Translation
 
 struct SettingsView: View {
     @Environment(AppSettings.self) private var settings
+    @Environment(SpeechPlayer.self) private var speechPlayer
     @State private var onDeviceStatus: RecognizerAvailability = .ready
     @State private var onDeviceModelID = ""
     @State private var intelligenceReady = false
@@ -95,6 +97,21 @@ struct SettingsView: View {
                 }
 
                 Section {
+                    ForEach(voiceLanguages, id: \.tag) { entry in
+                        voiceRow(entry.title, tag: entry.tag)
+                    }
+                    Button {
+                        if let url = URL(string: UIApplication.openSettingsURLString) { UIApplication.shared.open(url) }
+                    } label: {
+                        Label("Open Settings to download voices", systemImage: "arrow.down.circle")
+                    }
+                } header: {
+                    Text("Read-aloud voices")
+                } footer: {
+                    Text("Enhanced and Premium voices sound far more natural and run on device. Download them in Settings › Accessibility › Spoken Content › Voices, then pick them here. Voices marked Default are the compact ones that ship with iOS.")
+                }
+
+                Section {
                     Toggle("Show model metrics", isOn: $settings.showMetrics)
                 } header: {
                     Text("Display")
@@ -112,6 +129,58 @@ struct SettingsView: View {
             .navigationTitle("Settings")
             .task(id: "\(settings.sourceLanguageID)-\(settings.recognitionMode.rawValue)-\(settings.targetLanguageIDs.joined())") {
                 await refresh()
+            }
+        }
+    }
+
+    /// Source language first, then every selected translation target, without duplicates.
+    private var voiceLanguages: [(title: String, tag: String)] {
+        var seen = Set<String>()
+        var result: [(String, String)] = []
+        let source = settings.sourceLanguage
+        result.append(("\(source.flag) \(source.name)", source.voiceLanguage)); seen.insert(source.voiceLanguage)
+        for target in settings.targetLanguages where !seen.contains(target.voiceLanguage) {
+            result.append(("\(target.flag) \(target.name)", target.voiceLanguage)); seen.insert(target.voiceLanguage)
+        }
+        return result.map { (title: $0.0, tag: $0.1) }
+    }
+
+    private func voiceRow(_ title: String, tag: String) -> some View {
+        @Bindable var settings = settings
+        let voices = VoiceCatalog.voices(for: tag)
+        let selection = Binding<String>(
+            get: { settings.voiceIdentifiers[tag] ?? speechPlayer.resolvedVoice(for: tag)?.identifier ?? "" },
+            set: { settings.voiceIdentifiers[tag] = $0 }
+        )
+        return VStack(alignment: .leading, spacing: 6) {
+            HStack {
+                Text(title).font(.subheadline.weight(.semibold))
+                Spacer()
+                if VoiceCatalog.hasOnlyDefaultVoices(for: tag) {
+                    Badge(text: String(localized: "Default only"), systemImage: "arrow.down.circle", tint: KotodamaTheme.paper)
+                }
+                Button {
+                    speechPlayer.preview(language: tag)
+                } label: {
+                    Image(systemName: speechPlayer.isSpeaking("preview-\(tag)") ? "stop.fill" : "play.fill")
+                        .font(.caption.weight(.bold))
+                        .frame(width: 28, height: 28)
+                }
+                .buttonStyle(.plain)
+                .foregroundStyle(KotodamaTheme.spirit)
+                .glassEffect(.regular.tint(KotodamaTheme.spirit.opacity(0.15)).interactive(), in: .circle)
+                .accessibilityIdentifier("preview-\(tag)")
+            }
+            if voices.isEmpty {
+                Text("No voice installed for this language.").font(.caption).foregroundStyle(.secondary)
+            } else {
+                Picker("Voice", selection: selection) {
+                    ForEach(voices, id: \.identifier) { voice in
+                        Text(VoiceCatalog.describe(voice)).tag(voice.identifier)
+                    }
+                }
+                .pickerStyle(.menu)
+                .tint(KotodamaTheme.paper)
             }
         }
     }

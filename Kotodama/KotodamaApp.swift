@@ -14,8 +14,14 @@ import Translation
 struct KotodamaApp: App {
     @State private var settings = AppSettings()
     @State private var translationCoordinator = AppleTranslationCoordinator()
-    @State private var speechPlayer = SpeechPlayer()
+    @State private var speechPlayer: SpeechPlayer
     @State private var spiritFont = SpiritFont()
+
+    init() {
+        let settings = AppSettings()
+        _settings = State(initialValue: settings)
+        _speechPlayer = State(initialValue: SpeechPlayer(settings: settings))
+    }
 
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([Transcript.self, TranslationResult.self])
