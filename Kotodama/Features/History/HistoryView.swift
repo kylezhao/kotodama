@@ -102,10 +102,10 @@ struct TranscriptDetailView: View {
             SpiritFieldBackground()
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
-                    section("Spoken words", systemImage: "waveform") {
+                    section("Spoken words", systemImage: "waveform", speak: (transcript.rawText, "history-spoken", transcript.language.voiceLanguage)) {
                         Text(transcript.rawText).font(KotodamaTheme.transcript(18)).textSelection(.enabled)
                     }
-                    section("Refined", systemImage: "sparkles") {
+                    section("Refined", systemImage: "sparkles", speak: (transcript.polishedText, "history-refined", transcript.language.voiceLanguage)) {
                         Text(transcript.polishedText).font(KotodamaTheme.transcript(18)).textSelection(.enabled)
                         if let summary = transcript.summary, !summary.isEmpty {
                             Text(summary).font(.footnote).foregroundStyle(.secondary)
@@ -121,15 +121,19 @@ struct TranscriptDetailView: View {
                     if !transcript.translations.isEmpty {
                         section("Carried across", systemImage: "globe.asia.australia.fill") {
                             ForEach(transcript.sortedTranslations) { translation in
-                                VStack(alignment: .leading, spacing: 4) {
-                                    HStack {
+                                VStack(alignment: .leading, spacing: 10) {
+                                    HStack(spacing: 8) {
                                         Text("\(translation.target?.flag ?? "") \(translation.target?.nativeName ?? translation.targetLanguageID)")
                                             .font(.subheadline.weight(.semibold))
                                         Spacer()
                                         Badge(text: translation.translatorName, systemImage: "arrow.left.arrow.right", tint: KotodamaTheme.spirit)
+                                        if let target = translation.target {
+                                            SpeakButton(text: translation.text, id: "history-\(translation.id)", voiceLanguage: target.voiceLanguage)
+                                        }
                                     }
                                     Text(translation.text).font(KotodamaTheme.transcript(17)).textSelection(.enabled)
                                 }
+                                .padding(.bottom, 4)
                             }
                         }
                     }
@@ -161,14 +165,26 @@ struct TranscriptDetailView: View {
         }
     }
 
-    private func section<Content: View>(_ title: LocalizedStringKey, systemImage: String, @ViewBuilder content: () -> Content) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Label(title, systemImage: systemImage)
-                .font(KotodamaTheme.heading(.headline))
-                .foregroundStyle(KotodamaTheme.titleGradient)
+    private func section<Content: View>(
+        _ title: LocalizedStringKey,
+        systemImage: String,
+        speak: (text: String, id: String, voiceLanguage: String)? = nil,
+        @ViewBuilder content: () -> Content
+    ) -> some View {
+        VStack(alignment: .leading, spacing: 14) {
+            HStack {
+                Label(title, systemImage: systemImage)
+                    .font(KotodamaTheme.heading(.headline))
+                    .foregroundStyle(KotodamaTheme.titleGradient)
+                Spacer()
+                if let speak {
+                    SpeakButton(text: speak.text, id: speak.id, voiceLanguage: speak.voiceLanguage)
+                }
+            }
             content()
         }
-        .padding(16)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 18)
         .frame(maxWidth: .infinity, alignment: .leading)
         .talisman()
     }

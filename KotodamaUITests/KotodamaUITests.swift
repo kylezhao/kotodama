@@ -61,6 +61,26 @@ final class KotodamaUITests: XCTestCase {
         snapshot(app, "07-settings")
     }
 
+    /// Checks the result-card layout and play buttons on a seeded transcript, independent of recognition.
+    @MainActor
+    func testHistoryDetailLayout() throws {
+        let app = XCUIApplication()
+        app.launchArguments += ["-ui-testing", "-seed-history"]
+        app.launch()
+        sleep(2)
+        snapshot(app, "10-speak-idle-font")
+        app.tabBars.buttons["History"].tap()
+        let row = app.staticTexts["听力测试"]
+        XCTAssertTrue(row.waitForExistence(timeout: 5), "Seeded transcript should be listed")
+        row.tap()
+        XCTAssertTrue(app.buttons["speak-history-spoken"].waitForExistence(timeout: 5), "Play button should exist")
+        XCTAssertTrue(app.buttons["speak-history-refined"].exists)
+        app.buttons["speak-history-refined"].tap()
+        sleep(1)
+        snapshot(app, "11-history-detail-playing")
+        app.buttons["speak-history-refined"].tap()
+    }
+
     /// Runs a bundled sample and waits for either a transcript or an error. Returns true on transcript.
     @MainActor
     private func runSample(_ app: XCUIApplication, language: String, timeout: TimeInterval) -> Bool {

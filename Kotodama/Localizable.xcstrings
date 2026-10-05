@@ -1,54 +1,381 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "Add Item": {
-      "localizations": {
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "項目を追加"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "添加项目"
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
           }
         }
       }
     },
-    "Item at %@": {
-      "localizations": {
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%@ の項目"
+    "%@ is not supported by this engine. Try the other mode." : {
+
+    },
+    "About" : {
+
+    },
+    "Academic" : {
+
+    },
+    "Add Item" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "項目を追加"
           }
         },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%@ 的项目"
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加项目"
           }
         }
       }
     },
-    "Select an item": {
-      "localizations": {
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "項目を選択してください"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "请选择一个项目"
+    "Anthropic API key" : {
+
+    },
+    "Apple Intelligence" : {
+
+    },
+    "Apple speech models on this device · works offline" : {
+
+    },
+    "Apple Translate cannot handle %@ → %@. Add an Anthropic API key in Settings for cloud translation." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Apple Translate cannot handle %1$@ → %2$@. Add an Anthropic API key in Settings for cloud translation."
           }
         }
       }
+    },
+    "Apple Translate cannot translate %@ to %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Apple Translate cannot translate %1$@ to %2$@."
+          }
+        }
+      }
+    },
+    "Apple Translate downloads language packs on first use." : {
+
+    },
+    "Apple's speech servers · needs network" : {
+
+    },
+    "Apple's speech servers asked us to retry. Try again." : {
+
+    },
+    "Audio" : {
+
+    },
+    "Automatic" : {
+
+    },
+    "Automatic uses Apple Intelligence on device when it is available, then Claude if an API key is set, and finally built-in clean-up rules. Translation prefers Apple Translate on device and falls back to Claude." : {
+
+    },
+    "Business" : {
+
+    },
+    "Cancelled." : {
+
+    },
+    "Carried across" : {
+
+    },
+    "Carrying the words across…" : {
+
+    },
+    "Casual" : {
+
+    },
+    "Chinese" : {
+
+    },
+    "Claude is overloaded right now. Try again shortly." : {
+
+    },
+    "Cloud" : {
+
+    },
+    "Cloud features need an Anthropic API key. Add one in Settings." : {
+
+    },
+    "Cloud model" : {
+
+    },
+    "cloud only" : {
+
+    },
+    "Concise" : {
+
+    },
+    "Copyright © 2026 Kyle Zhao. All rights reserved." : {
+
+    },
+    "Delete" : {
+
+    },
+    "Display" : {
+
+    },
+    "Done" : {
+
+    },
+    "Download model" : {
+
+    },
+    "download on first use" : {
+
+    },
+    "Downloading speech model… %lld%%" : {
+
+    },
+    "Email" : {
+
+    },
+    "Engine" : {
+
+    },
+    "English" : {
+
+    },
+    "Everything you speak is kept here with its refined text and translations." : {
+
+    },
+    "First result" : {
+
+    },
+    "Formal" : {
+
+    },
+    "History" : {
+
+    },
+    "Import audio file" : {
+
+    },
+    "installed" : {
+
+    },
+    "Intelligence" : {
+
+    },
+    "Item at %@" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ の項目"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 的项目"
+          }
+        }
+      }
+    },
+    "Japanese" : {
+
+    },
+    "Kotodama" : {
+
+    },
+    "Lecture" : {
+
+    },
+    "Listening…" : {
+
+    },
+    "LIVE" : {
+
+    },
+    "Meeting" : {
+
+    },
+    "Message" : {
+
+    },
+    "Metrics" : {
+
+    },
+    "Microphone access is off. Allow it in Settings to speak." : {
+
+    },
+    "Natural" : {
+
+    },
+    "Needs download" : {
+
+    },
+    "No microphone is available on this device." : {
+
+    },
+    "No words recorded yet" : {
+
+    },
+    "No words were heard. Try speaking a little louder." : {
+
+    },
+    "Notes" : {
+
+    },
+    "On-device" : {
+
+    },
+    "Other" : {
+
+    },
+    "Polishing and translation" : {
+
+    },
+    "Polishing failed." : {
+
+    },
+    "Ready" : {
+
+    },
+    "Recognition" : {
+
+    },
+    "Recognition runs" : {
+
+    },
+    "Refined" : {
+
+    },
+    "Refining the words…" : {
+
+    },
+    "RTF" : {
+
+    },
+    "Sample audio for %@ is missing." : {
+
+    },
+    "Select an item" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "項目を選択してください"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请选择一个项目"
+          }
+        }
+      }
+    },
+    "Settings" : {
+
+    },
+    "Show model metrics" : {
+
+    },
+    "Social post" : {
+
+    },
+    "Speak" : {
+
+    },
+    "Speech model for %@" : {
+
+    },
+    "Speech recognition" : {
+
+    },
+    "Speech recognition access is off. Allow it in Settings." : {
+
+    },
+    "Spoken words" : {
+
+    },
+    "Start listening" : {
+
+    },
+    "Stop listening" : {
+
+    },
+    "Stored in the keychain on this device" : {
+
+    },
+    "Tap the orb and speak" : {
+
+    },
+    "The %@ translation model needs to be downloaded first." : {
+
+    },
+    "The API key was rejected. Check it in Settings." : {
+
+    },
+    "The cloud model declined this request." : {
+
+    },
+    "The cloud model is busy. Try again in a moment." : {
+
+    },
+    "The cloud model returned nothing." : {
+
+    },
+    "The cloud reply could not be read." : {
+
+    },
+    "The microphone could not start." : {
+
+    },
+    "The on-device model is not available." : {
+
+    },
+    "The speech model could not be downloaded." : {
+
+    },
+    "Transcribing audio…" : {
+
+    },
+    "Translate automatically" : {
+
+    },
+    "Translate into" : {
+
+    },
+    "Translation is not available right now." : {
+
+    },
+    "Travel" : {
+
+    },
+    "Try a sample" : {
+
+    },
+    "Unavailable" : {
+
+    },
+    "Untitled" : {
+
+    },
+    "Version" : {
+
+    },
+    "You're offline. On-device features keep working." : {
+
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }

@@ -34,6 +34,7 @@ enum KotodamaTheme {
 /// Night sky with drifting word spirits. `energy` (0...1) makes them glow and rise faster.
 struct SpiritFieldBackground: View {
     var energy: Float = 0
+    @Environment(SpiritFont.self) private var spiritFont
 
     private static let glyphs = ["言", "霊", "音", "声", "心", "光", "風", "詞", "語", "魂"]
 
@@ -75,7 +76,7 @@ struct SpiritFieldBackground: View {
                         let pulse = 0.5 + 0.5 * sin(time * 1.3 + spirit.phase)
                         let opacity = (0.18 + 0.32 * pulse) * glow
                         var text = Text(spirit.glyph)
-                            .font(.system(size: spirit.size, weight: .light, design: .serif))
+                            .font(spiritFont.font(size: spirit.size))
                         text = text.foregroundColor(KotodamaTheme.spirit.opacity(opacity))
                         canvas.draw(text, at: point)
                     }
@@ -166,5 +167,34 @@ struct Chip: View {
         .buttonStyle(.plain)
         .foregroundStyle(isSelected ? tint : .primary)
         .glassEffect(.regular.tint(isSelected ? tint.opacity(0.28) : .clear).interactive(), in: .capsule)
+    }
+}
+
+/// Round play/stop button that reads a sentence aloud.
+import SwiftUI
+
+struct SpeakButton: View {
+    let text: String
+    let id: String
+    let voiceLanguage: String
+    var tint: Color = KotodamaTheme.spirit
+    @Environment(SpeechPlayer.self) private var player
+
+    var body: some View {
+        let speaking = player.isSpeaking(id)
+        Button {
+            player.toggle(text, id: id, voiceLanguage: voiceLanguage)
+        } label: {
+            Image(systemName: speaking ? "stop.fill" : "play.fill")
+                .font(.system(size: 12, weight: .bold))
+                .foregroundStyle(speaking ? Color.white : tint)
+                .frame(width: 30, height: 30)
+                .contentTransition(.symbolEffect(.replace))
+        }
+        .buttonStyle(.plain)
+        .glassEffect(.regular.tint(speaking ? tint.opacity(0.9) : tint.opacity(0.15)).interactive(), in: .circle)
+        .accessibilityLabel(speaking ? "Stop" : "Play")
+        .accessibilityIdentifier("speak-\(id)")
+        .disabled(text.isEmpty)
     }
 }

@@ -31,10 +31,14 @@ Built for the Metanomaly iOS programming assignment (AI Speech-to-Text App).
   on-device and cloud paths.
 - **Model metrics** per recording: recognizer and model id, audio length, recognition time,
   first-result latency, real-time factor, and refiner and translator latency.
+- **Read it back**: a play button on the spoken text, the refined text and every translation
+  speaks the sentence with the system voice for that language (`AVSpeechSynthesizer`, best
+  available quality, Cantonese and Shanghainese mapped to the closest voice).
 - **History** with Markdown export for test cases, and bundled sample audio in English, Mandarin
   and Japanese so the pipeline can be exercised without a microphone.
-- **Liquid glass UI** on iOS 26 with a night-shrine theme: drifting word spirits that glow with
-  your voice, talisman-framed cards and a breathing orb.
+- **Liquid glass UI** on iOS 26 with a night-shrine theme: drifting word spirits in a traditional
+  brush-style face (Hiragino Mincho, upgrading to Apple's downloadable 行楷 / 楷体 when available)
+  that glow with your voice, talisman-framed cards and a breathing orb.
 - Localized in English, Simplified Chinese (简体中文) and Japanese (日本語).
 
 ## Engines

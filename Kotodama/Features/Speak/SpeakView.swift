@@ -190,12 +190,15 @@ struct SpeakView: View {
     // MARK: - Cards
 
     private var transcriptCard: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 14) {
             HStack {
                 Label("Spoken words", systemImage: "waveform")
                     .font(KotodamaTheme.heading(.headline))
                     .foregroundStyle(KotodamaTheme.titleGradient)
                 Spacer()
+                if !viewModel.isBusy, !viewModel.finalizedText.isEmpty {
+                    SpeakButton(text: viewModel.finalizedText, id: "spoken", voiceLanguage: viewModel.language.voiceLanguage)
+                }
                 if viewModel.isListening {
                     HStack(spacing: 5) {
                         Circle().fill(KotodamaTheme.vermilion).frame(width: 7, height: 7)
@@ -221,19 +224,23 @@ struct SpeakView: View {
                 ProgressView(value: progress).tint(KotodamaTheme.spirit)
             }
         }
-        .padding(16)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 18)
         .frame(maxWidth: .infinity, alignment: .leading)
         .talisman()
     }
 
     private func refinedCard(_ refined: RefinedText) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            HStack {
+        VStack(alignment: .leading, spacing: 14) {
+            HStack(spacing: 8) {
                 Label("Refined", systemImage: "sparkles")
                     .font(KotodamaTheme.heading(.headline))
                     .foregroundStyle(KotodamaTheme.titleGradient)
                 Spacer()
                 Badge(text: refined.engine.displayName, systemImage: "wand.and.stars", tint: KotodamaTheme.blossom)
+                if !viewModel.isBusy {
+                    SpeakButton(text: refined.text, id: "refined", voiceLanguage: viewModel.language.voiceLanguage, tint: KotodamaTheme.blossom)
+                }
             }
             Text(refined.title)
                 .font(.subheadline.weight(.semibold))
@@ -259,28 +266,33 @@ struct SpeakView: View {
                     .foregroundStyle(.tertiary)
             }
         }
-        .padding(16)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 18)
         .frame(maxWidth: .infinity, alignment: .leading)
         .talisman()
     }
 
     private var translationsCard: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 18) {
             Label("Carried across", systemImage: "globe.asia.australia.fill")
                 .font(KotodamaTheme.heading(.headline))
                 .foregroundStyle(KotodamaTheme.titleGradient)
             ForEach(viewModel.translations, id: \.target.id) { translation in
-                VStack(alignment: .leading, spacing: 4) {
-                    HStack {
+                VStack(alignment: .leading, spacing: 10) {
+                    HStack(spacing: 8) {
                         Text("\(translation.target.flag) \(translation.target.nativeName)")
                             .font(.subheadline.weight(.semibold))
                         Spacer()
                         Badge(text: translation.engine.displayName, systemImage: "arrow.left.arrow.right", tint: KotodamaTheme.spirit)
+                        if !viewModel.isBusy {
+                            SpeakButton(text: translation.text, id: "translation-\(translation.target.id)", voiceLanguage: translation.target.voiceLanguage)
+                        }
                     }
                     Text(translation.text)
                         .font(KotodamaTheme.transcript(18))
                         .lineSpacing(3)
                         .textSelection(.enabled)
+                        .padding(.bottom, 2)
                 }
                 .accessibilityIdentifier("translation-\(translation.target.id)")
             }
@@ -288,7 +300,8 @@ struct SpeakView: View {
                 Text(error).font(.caption2).foregroundStyle(.tertiary)
             }
         }
-        .padding(16)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 18)
         .frame(maxWidth: .infinity, alignment: .leading)
         .talisman()
     }

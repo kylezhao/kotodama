@@ -402,7 +402,7 @@
 				DEVELOPMENT_TEAM = W2C828ZHV8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Kotodama";
+				INFOPLIST_KEY_CFBundleDisplayName = Kotodama;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Kotodama listens to your voice to turn spoken words into text.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Kotodama uses speech recognition to transcribe what you say, on device or via Apple's servers.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -437,7 +437,7 @@
 				DEVELOPMENT_TEAM = W2C828ZHV8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Kotodama";
+				INFOPLIST_KEY_CFBundleDisplayName = Kotodama;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Kotodama listens to your voice to turn spoken words into text.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Kotodama uses speech recognition to transcribe what you say, on device or via Apple's servers.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
