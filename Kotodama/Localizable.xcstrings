@@ -1,414 +1,1832 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "%@ %@" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ %2$@"
+  "sourceLanguage": "en",
+  "strings": {
+    "%@ %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ %2$@"
           }
         }
-      }
+      },
+      "shouldTranslate": false
     },
-    "%@ is not supported by this engine. Try the other mode." : {
-
-    },
-    "About" : {
-
-    },
-    "Academic" : {
-
-    },
-    "Add Item" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "項目を追加"
+    "%@ is not supported by this engine. Try the other mode.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ はこのエンジンでは対応していません。別のモードをお試しください。"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "添加项目"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此引擎不支持 %@。请尝试另一种模式。"
           }
         }
       }
     },
-    "Anthropic API key" : {
-
-    },
-    "Apple Intelligence" : {
-
-    },
-    "Apple speech models on this device · works offline" : {
-
-    },
-    "Apple Translate cannot handle %@ → %@. Add an Anthropic API key in Settings for cloud translation." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Apple Translate cannot handle %1$@ → %2$@. Add an Anthropic API key in Settings for cloud translation."
-          }
-        }
-      }
-    },
-    "Apple Translate cannot translate %@ to %@." : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Apple Translate cannot translate %1$@ to %2$@."
-          }
-        }
-      }
-    },
-    "Apple Translate downloads language packs on first use." : {
-
-    },
-    "Apple's speech servers · needs network" : {
-
-    },
-    "Apple's speech servers asked us to retry. Try again." : {
-
-    },
-    "Audio" : {
-
-    },
-    "Automatic" : {
-
-    },
-    "Automatic uses Apple Intelligence on device when it is available, then Claude if an API key is set, and finally built-in clean-up rules. Translation prefers Apple Translate on device and falls back to Claude." : {
-
-    },
-    "Business" : {
-
-    },
-    "Cancelled." : {
-
-    },
-    "Carried across" : {
-
-    },
-    "Carrying the words across…" : {
-
-    },
-    "Casual" : {
-
-    },
-    "Chinese" : {
-
-    },
-    "Claude is overloaded right now. Try again shortly." : {
-
-    },
-    "Cloud" : {
-
-    },
-    "Cloud features need an Anthropic API key. Add one in Settings." : {
-
-    },
-    "Cloud model" : {
-
-    },
-    "cloud only" : {
-
-    },
-    "Concise" : {
-
-    },
-    "Copyright © 2026 Kyle Zhao. All rights reserved." : {
-
-    },
-    "Default" : {
-
-    },
-    "Default only" : {
-
-    },
-    "Delete" : {
-
-    },
-    "Display" : {
-
-    },
-    "Done" : {
-
-    },
-    "Download model" : {
-
-    },
-    "download on first use" : {
-
-    },
-    "Downloading speech model… %lld%%" : {
-
-    },
-    "Email" : {
-
-    },
-    "Engine" : {
-
-    },
-    "English" : {
-
-    },
-    "Enhanced" : {
-
-    },
-    "Enhanced and Premium voices sound far more natural and run on device. Download them in Settings › Accessibility › Spoken Content › Voices, then pick them here. Voices marked Default are the compact ones that ship with iOS." : {
-
-    },
-    "Everything you speak is kept here with its refined text and translations." : {
-
-    },
-    "First result" : {
-
-    },
-    "Formal" : {
-
-    },
-    "History" : {
-
-    },
-    "Import audio file" : {
-
-    },
-    "installed" : {
-
-    },
-    "Intelligence" : {
-
-    },
-    "Item at %@" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ の項目"
+    "About": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "情報"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ 的项目"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于"
           }
         }
       }
     },
-    "Japanese" : {
-
-    },
-    "Kotodama" : {
-
-    },
-    "Lecture" : {
-
-    },
-    "Listening…" : {
-
-    },
-    "LIVE" : {
-
-    },
-    "Meeting" : {
-
-    },
-    "Message" : {
-
-    },
-    "Metrics" : {
-
-    },
-    "Microphone access is off. Allow it in Settings to speak." : {
-
-    },
-    "Natural" : {
-
-    },
-    "Needs download" : {
-
-    },
-    "No microphone is available on this device." : {
-
-    },
-    "No voice installed for this language." : {
-
-    },
-    "No words recorded yet" : {
-
-    },
-    "No words were heard. Try speaking a little louder." : {
-
-    },
-    "Notes" : {
-
-    },
-    "On-device" : {
-
-    },
-    "Open Settings to download voices" : {
-
-    },
-    "Other" : {
-
-    },
-    "Play" : {
-
-    },
-    "Polishing and translation" : {
-
-    },
-    "Polishing failed." : {
-
-    },
-    "Premium" : {
-
-    },
-    "Read-aloud voices" : {
-
-    },
-    "Ready" : {
-
-    },
-    "Recognition" : {
-
-    },
-    "Recognition runs" : {
-
-    },
-    "Refined" : {
-
-    },
-    "Refining the words…" : {
-
-    },
-    "RTF" : {
-
-    },
-    "Sample audio for %@ is missing." : {
-
-    },
-    "Select an item" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "項目を選択してください"
+    "Academic": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "学術的"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "请选择一个项目"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "学术"
           }
         }
       }
     },
-    "Settings" : {
-
+    "Add Item": {
+      "extractionState": "stale",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "項目を追加"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加项目"
+          }
+        }
+      }
     },
-    "Show model metrics" : {
-
+    "Anthropic API key": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anthropic API キー"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anthropic API 密钥"
+          }
+        }
+      }
     },
-    "Social post" : {
-
+    "Apple Intelligence": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 智能"
+          }
+        }
+      }
     },
-    "Speak" : {
-
+    "Apple Translate cannot handle %@ → %@. Add an Anthropic API key in Settings for cloud translation.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Apple Translate cannot handle %1$@ → %2$@. Add an Anthropic API key in Settings for cloud translation."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻訳は %@ → %@ に対応していません。クラウド翻訳を使うには「設定」で Anthropic API キーを追加してください。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻译无法处理 %@ → %@。请在“设置”中添加 Anthropic API 密钥以使用云端翻译。"
+          }
+        }
+      }
     },
-    "Speech model for %@" : {
-
+    "Apple Translate cannot translate %@ to %@.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Apple Translate cannot translate %1$@ to %2$@."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻訳は %@ を %@ に翻訳できません。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻译无法将 %@ 翻译为 %@。"
+          }
+        }
+      }
     },
-    "Speech recognition" : {
-
+    "Apple Translate downloads language packs on first use.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻訳は初回使用時に言語パックをダウンロードします。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 翻译会在首次使用时下载语言包。"
+          }
+        }
+      }
     },
-    "Speech recognition access is off. Allow it in Settings." : {
-
+    "Apple speech models on this device · works offline": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このデバイス上の Apple 音声モデル · オフラインで動作"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本设备上的 Apple 语音模型 · 可离线使用"
+          }
+        }
+      }
     },
-    "Spoken words" : {
-
+    "Apple's speech servers asked us to retry. Try again.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple の音声サーバーから再試行を求められました。もう一度お試しください。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 语音服务器要求重试。请再试一次。"
+          }
+        }
+      }
     },
-    "Start listening" : {
-
+    "Apple's speech servers · needs network": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple の音声サーバー · ネットワークが必要"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 语音服务器 · 需要网络"
+          }
+        }
+      }
     },
-    "Stop" : {
-
+    "Audio": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "音声"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "音频"
+          }
+        }
+      }
     },
-    "Stop listening" : {
-
+    "Automatic": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自動"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自动"
+          }
+        }
+      }
     },
-    "Stored in the keychain on this device" : {
-
+    "Automatic uses Apple Intelligence on device when it is available, then Claude if an API key is set, and finally built-in clean-up rules. Translation prefers Apple Translate on device and falls back to Claude.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「自動」は利用可能ならデバイス上の Apple Intelligence を使い、次に API キーが設定されていれば Claude、最後に内蔵の整形ルールを使います。翻訳はデバイス上の Apple 翻訳を優先し、Claude にフォールバックします。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“自动”会优先使用设备上的 Apple 智能；若已设置 API 密钥则使用 Claude；最后使用内置的整理规则。翻译优先使用设备上的 Apple 翻译，并回退到 Claude。"
+          }
+        }
+      }
     },
-    "Tap the orb and speak" : {
-
+    "Business": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ビジネス"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "商务"
+          }
+        }
+      }
     },
-    "The %@ translation model needs to be downloaded first." : {
-
+    "Cancelled.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャンセルしました。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已取消。"
+          }
+        }
+      }
     },
-    "The API key was rejected. Check it in Settings." : {
-
+    "Carried across": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "言葉の渡し"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跨越语言"
+          }
+        }
+      }
     },
-    "The cloud model declined this request." : {
-
+    "Carrying the words across…": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "言葉を渡しています…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在跨越语言…"
+          }
+        }
+      }
     },
-    "The cloud model is busy. Try again in a moment." : {
-
+    "Casual": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カジュアル"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "随意"
+          }
+        }
+      }
     },
-    "The cloud model returned nothing." : {
-
+    "Chinese": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "中国語"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "中文"
+          }
+        }
+      }
     },
-    "The cloud reply could not be read." : {
-
+    "Claude is overloaded right now. Try again shortly.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Claude は現在混み合っています。しばらくしてからお試しください。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Claude 当前负载过高。请稍后再试。"
+          }
+        }
+      }
     },
-    "The microphone could not start." : {
-
+    "Cloud": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラウド"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "云端"
+          }
+        }
+      }
     },
-    "The on-device model is not available." : {
-
+    "Cloud features need an Anthropic API key. Add one in Settings.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラウド機能には Anthropic API キーが必要です。「設定」で追加してください。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "云端功能需要 Anthropic API 密钥。请在“设置”中添加。"
+          }
+        }
+      }
     },
-    "The speech model could not be downloaded." : {
-
+    "Cloud model": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラウドモデル"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "云端模型"
+          }
+        }
+      }
     },
-    "Transcribing audio…" : {
-
+    "Concise": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "簡潔"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "简洁"
+          }
+        }
+      }
     },
-    "Translate automatically" : {
-
+    "Copyright © 2026 Kyle Zhao. All rights reserved.": {
+      "localizations": {},
+      "shouldTranslate": false
     },
-    "Translate into" : {
-
+    "Default": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "標準"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "默认"
+          }
+        }
+      }
     },
-    "Translation is not available right now." : {
-
+    "Default only": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "標準のみ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅默认"
+          }
+        }
+      }
     },
-    "Travel" : {
-
+    "Delete": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "削除"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除"
+          }
+        }
+      }
     },
-    "Try a sample" : {
-
+    "Display": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "表示"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示"
+          }
+        }
+      }
     },
-    "Unavailable" : {
-
+    "Done": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完了"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完成"
+          }
+        }
+      }
     },
-    "Untitled" : {
-
+    "Download model": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "モデルをダウンロード"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "下载模型"
+          }
+        }
+      }
     },
-    "Version" : {
-
+    "Downloading speech model… %lld%%": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "音声モデルをダウンロード中… %lld%%"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在下载语音模型… %lld%%"
+          }
+        }
+      }
     },
-    "Voice" : {
-
+    "Email": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "メール"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "邮件"
+          }
+        }
+      }
     },
-    "You're offline. On-device features keep working." : {
-
+    "Engine": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "エンジン"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "引擎"
+          }
+        }
+      }
+    },
+    "English": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "英語"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "英语"
+          }
+        }
+      }
+    },
+    "Enhanced": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "高品質"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "增强"
+          }
+        }
+      }
+    },
+    "Enhanced and Premium voices sound far more natural and run on device. Download them in Settings › Accessibility › Spoken Content › Voices, then pick them here. Voices marked Default are the compact ones that ship with iOS.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「高品質」と「プレミアム」の音声ははるかに自然で、デバイス上で動作します。「設定」›「アクセシビリティ」›「読み上げコンテンツ」›「声」でダウンロードし、ここで選択してください。「標準」の音声は iOS に付属するコンパクト版です。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“增强”和“高级”语音更加自然，并在设备上运行。请在“设置”›“辅助功能”›“朗读内容”›“声音”中下载，然后在此选择。标记为“默认”的是 iOS 自带的精简语音。"
+          }
+        }
+      }
+    },
+    "Everything you speak is kept here with its refined text and translations.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "話した内容はすべて、整えたテキストと翻訳とともにここに保存されます。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "您说过的所有内容都会与润色文本和翻译一起保存在这里。"
+          }
+        }
+      }
+    },
+    "First result": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "初回結果"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "首次结果"
+          }
+        }
+      }
+    },
+    "Formal": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フォーマル"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正式"
+          }
+        }
+      }
+    },
+    "History": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "履歴"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "历史"
+          }
+        }
+      }
+    },
+    "Import audio file": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "音声ファイルを読み込む"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "导入音频文件"
+          }
+        }
+      }
+    },
+    "Intelligence": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "インテリジェンス"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "智能"
+          }
+        }
+      }
+    },
+    "Item at %@": {
+      "extractionState": "stale",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ の項目"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 的项目"
+          }
+        }
+      }
+    },
+    "Japanese": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日本語"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日语"
+          }
+        }
+      }
+    },
+    "Kotodama": {
+      "localizations": {},
+      "shouldTranslate": false
+    },
+    "LIVE": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ライブ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "实时"
+          }
+        }
+      }
+    },
+    "Lecture": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "講義"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "讲座"
+          }
+        }
+      }
+    },
+    "Listening…": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "聞いています…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在聆听…"
+          }
+        }
+      }
+    },
+    "Meeting": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "会議"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "会议"
+          }
+        }
+      }
+    },
+    "Message": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "メッセージ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "消息"
+          }
+        }
+      }
+    },
+    "Metrics": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "指標"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "指标"
+          }
+        }
+      }
+    },
+    "Microphone access is off. Allow it in Settings to speak.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "マイクへのアクセスがオフです。話すには「設定」で許可してください。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "麦克风访问已关闭。请在“设置”中允许后再说话。"
+          }
+        }
+      }
+    },
+    "Natural": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自然"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自然"
+          }
+        }
+      }
+    },
+    "Needs download": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ダウンロードが必要"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要下载"
+          }
+        }
+      }
+    },
+    "No microphone is available on this device.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このデバイスではマイクを利用できません。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此设备没有可用的麦克风。"
+          }
+        }
+      }
+    },
+    "No voice installed for this language.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この言語の音声はインストールされていません。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此语言尚未安装语音。"
+          }
+        }
+      }
+    },
+    "No words recorded yet": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ記録された言葉はありません"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "还没有记录的话语"
+          }
+        }
+      }
+    },
+    "No words were heard. Try speaking a little louder.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "言葉が聞き取れませんでした。もう少し大きな声で話してみてください。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "没有听到话语。请试着说大声一点。"
+          }
+        }
+      }
+    },
+    "Notes": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "メモ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "笔记"
+          }
+        }
+      }
+    },
+    "On-device": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デバイス上"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设备端"
+          }
+        }
+      }
+    },
+    "Open Settings to download voices": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「設定」を開いて音声をダウンロード"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开“设置”下载语音"
+          }
+        }
+      }
+    },
+    "Other": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "その他"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "其他"
+          }
+        }
+      }
+    },
+    "Play": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "再生"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "播放"
+          }
+        }
+      }
+    },
+    "Polishing and translation": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "整形と翻訳"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "润色与翻译"
+          }
+        }
+      }
+    },
+    "Polishing failed.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "整形に失敗しました。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "润色失败。"
+          }
+        }
+      }
+    },
+    "Premium": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プレミアム"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "高级"
+          }
+        }
+      }
+    },
+    "RTF": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RTF"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RTF"
+          }
+        }
+      }
+    },
+    "Read-aloud voices": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "読み上げの声"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "朗读语音"
+          }
+        }
+      }
+    },
+    "Ready": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "準備完了"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "就绪"
+          }
+        }
+      }
+    },
+    "Recognition": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "認識"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "识别"
+          }
+        }
+      }
+    },
+    "Recognition runs": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "認識の実行場所"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "识别运行于"
+          }
+        }
+      }
+    },
+    "Refined": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "整えた言葉"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "润色"
+          }
+        }
+      }
+    },
+    "Refining the words…": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "言葉を整えています…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在润色…"
+          }
+        }
+      }
+    },
+    "Sample audio for %@ is missing.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ のサンプル音声がありません。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "缺少 %@ 的示例音频。"
+          }
+        }
+      }
+    },
+    "Select an item": {
+      "extractionState": "stale",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "項目を選択してください"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请选择一个项目"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置"
+          }
+        }
+      }
+    },
+    "Show model metrics": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "モデル指標を表示"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示模型指标"
+          }
+        }
+      }
+    },
+    "Social post": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SNS 投稿"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "社交帖子"
+          }
+        }
+      }
+    },
+    "Speak": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "話す"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "说话"
+          }
+        }
+      }
+    },
+    "Speech model for %@": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ の音声モデル"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 的语音模型"
+          }
+        }
+      }
+    },
+    "Speech recognition": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "音声認識"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "语音识别"
+          }
+        }
+      }
+    },
+    "Speech recognition access is off. Allow it in Settings.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "音声認識へのアクセスがオフです。「設定」で許可してください。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "语音识别访问已关闭。请在“设置”中允许。"
+          }
+        }
+      }
+    },
+    "Spoken words": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "話した言葉"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "所说的话"
+          }
+        }
+      }
+    },
+    "Start listening": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "聞き取りを開始"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "开始聆听"
+          }
+        }
+      }
+    },
+    "Stop": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "停止"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "停止"
+          }
+        }
+      }
+    },
+    "Stop listening": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "聞き取りを停止"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "停止聆听"
+          }
+        }
+      }
+    },
+    "Stored in the keychain on this device": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このデバイスのキーチェーンに保存されています"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已保存在此设备的钥匙串中"
+          }
+        }
+      }
+    },
+    "Tap the orb and speak": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オーブをタップして話してください"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "点击光球并说话"
+          }
+        }
+      }
+    },
+    "The %@ translation model needs to be downloaded first.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ の翻訳モデルを先にダウンロードする必要があります。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要先下载 %@ 翻译模型。"
+          }
+        }
+      }
+    },
+    "The API key was rejected. Check it in Settings.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API キーが拒否されました。「設定」で確認してください。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API 密钥被拒绝。请在“设置”中检查。"
+          }
+        }
+      }
+    },
+    "The cloud model declined this request.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラウドモデルがこのリクエストを拒否しました。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "云端模型拒绝了此请求。"
+          }
+        }
+      }
+    },
+    "The cloud model is busy. Try again in a moment.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラウドモデルが混み合っています。しばらくしてからお試しください。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "云端模型正忙。请稍后再试。"
+          }
+        }
+      }
+    },
+    "The cloud model returned nothing.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラウドモデルから応答がありませんでした。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "云端模型没有返回内容。"
+          }
+        }
+      }
+    },
+    "The cloud reply could not be read.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラウドの応答を読み取れませんでした。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法读取云端回复。"
+          }
+        }
+      }
+    },
+    "The microphone could not start.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "マイクを開始できませんでした。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法启动麦克风。"
+          }
+        }
+      }
+    },
+    "The on-device model is not available.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デバイス上のモデルを利用できません。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设备端模型不可用。"
+          }
+        }
+      }
+    },
+    "The speech model could not be downloaded.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "音声モデルをダウンロードできませんでした。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法下载语音模型。"
+          }
+        }
+      }
+    },
+    "Transcribing audio…": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "音声を文字起こししています…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正在转写音频…"
+          }
+        }
+      }
+    },
+    "Translate automatically": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自動的に翻訳"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自动翻译"
+          }
+        }
+      }
+    },
+    "Translate into": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻訳先"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻译为"
+          }
+        }
+      }
+    },
+    "Translation is not available right now.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在翻訳を利用できません。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "翻译暂时不可用。"
+          }
+        }
+      }
+    },
+    "Travel": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "旅行"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "旅行"
+          }
+        }
+      }
+    },
+    "Try a sample": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サンプルを試す"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "试听示例"
+          }
+        }
+      }
+    },
+    "Unavailable": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "利用不可"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不可用"
+          }
+        }
+      }
+    },
+    "Untitled": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無題"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无标题"
+          }
+        }
+      }
+    },
+    "Version": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バージョン"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "版本"
+          }
+        }
+      }
+    },
+    "Voice": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "声"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "语音"
+          }
+        }
+      }
+    },
+    "You're offline. On-device features keep working.": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オフラインです。デバイス上の機能は引き続き使えます。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "您已离线。设备端功能仍可使用。"
+          }
+        }
+      }
+    },
+    "cloud only": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラウドのみ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅云端"
+          }
+        }
+      }
+    },
+    "download on first use": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "初回使用時にダウンロード"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "首次使用时下载"
+          }
+        }
+      }
+    },
+    "installed": {
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "インストール済み"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已安装"
+          }
+        }
+      }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }
