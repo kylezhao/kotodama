@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- the word spirit: a glowing orb with a trailing flame, top right -->
+  <path d="M720 108 C 760 150, 806 176, 806 240 C 806 290, 768 328, 720 328 C 672 328, 634 290, 634 240 C 634 190, 684 176, 690 128 C 702 150, 712 160, 720 108 Z" fill="#8FE3F5"/>
+  <circle cx="720" cy="246" r="34" fill="#FFFFFF"/>
+</svg>

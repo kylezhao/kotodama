@@ -1,0 +1,40 @@
+{
+  "fill": {
+    "automatic-gradient": "extended-srgb:0.07000,0.22000,0.34000,1.00000"
+  },
+  "groups": [
+    {
+      "layers": [
+        {
+          "image-name": "spirit.svg",
+          "name": "spirit"
+        },
+        {
+          "image-name": "waves.svg",
+          "name": "waves"
+        },
+        {
+          "image-name": "bubble.svg",
+          "name": "bubble"
+        }
+      ],
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.5
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.5
+      },
+      "specular": true,
+      "blur-material": 0.5,
+      "lighting": "individual"
+    }
+  ],
+  "supported-platforms": {
+    "circles": [
+      "watchOS"
+    ],
+    "squares": "shared"
+  }
+}

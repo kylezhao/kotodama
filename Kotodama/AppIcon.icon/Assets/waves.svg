@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- voice waves inside the bubble -->
+  <g fill="none" stroke="#1C3F58" stroke-linecap="round" stroke-width="44">
+    <line x1="360" y1="424" x2="360" y2="424"/>
+    <line x1="430" y1="372" x2="430" y2="476"/>
+    <line x1="512" y1="316" x2="512" y2="532"/>
+    <line x1="594" y1="372" x2="594" y2="476"/>
+    <line x1="664" y1="424" x2="664" y2="424"/>
+  </g>
+</svg>
