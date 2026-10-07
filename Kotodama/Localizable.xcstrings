@@ -123,6 +123,12 @@
     "Copyright © 2026 Kyle Zhao. All rights reserved." : {
 
     },
+    "Default" : {
+
+    },
+    "Default only" : {
+
+    },
     "Delete" : {
 
     },
@@ -148,6 +154,12 @@
 
     },
     "English" : {
+
+    },
+    "Enhanced" : {
+
+    },
+    "Enhanced and Premium voices sound far more natural and run on device. Download them in Settings › Accessibility › Spoken Content › Voices, then pick them here. Voices marked Default are the compact ones that ship with iOS." : {
 
     },
     "Everything you speak is kept here with its refined text and translations." : {
@@ -224,6 +236,9 @@
     "No microphone is available on this device." : {
 
     },
+    "No voice installed for this language." : {
+
+    },
     "No words recorded yet" : {
 
     },
@@ -236,6 +251,9 @@
     "On-device" : {
 
     },
+    "Open Settings to download voices" : {
+
+    },
     "Other" : {
 
     },
@@ -246,6 +264,12 @@
 
     },
     "Polishing failed." : {
+
+    },
+    "Premium" : {
+
+    },
+    "Read-aloud voices" : {
 
     },
     "Ready" : {
@@ -377,6 +401,9 @@
 
     },
     "Version" : {
+
+    },
+    "Voice" : {
 
     },
     "You're offline. On-device features keep working." : {
