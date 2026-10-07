@@ -10,7 +10,16 @@ models, with cloud models available when you want them.
 
 Built for the Metanomaly iOS programming assignment (AI Speech-to-Text App).
 
-![Speak](docs/screenshots/03-speak-polished.png) ![History](docs/screenshots/06-history.png) ![Settings](docs/screenshots/07-settings.png)
+
+## Showcase
+
+**Screen recording (iPhone 16e):** [docs/showcase/kotodama-showcase.mp4](docs/showcase/kotodama-showcase.mp4)
+
+| On device: polished text, translations and read-aloud | On device: history | Home screen | Simulator: Mandarin |
+| --- | --- | --- | --- |
+| ![Speak screen](docs/showcase/device-speak-translations.jpeg) | ![History](docs/showcase/device-history.jpeg) | ![Home screen](docs/showcase/device-home-screen.jpeg) | ![Mandarin](docs/screenshots/05-speak-mandarin.png) |
+
+Submission documents: [AI conversation log](docs/AI_CONVERSATION_LOG.md) · [Models, parameters and metrics](docs/MODELS.md) · [Bug list](docs/BUGS.md) · [Optimizations](docs/OPTIMIZATIONS.md)
 
 ## Features
 
